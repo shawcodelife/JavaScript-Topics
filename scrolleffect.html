@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+	  		<div class="col-sm-4" id="card-one">
+			  <div class="card" style="width:350px">
+			    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+			    <div class="card-body">
+			      <h4 class="card-title">John Doe</h4>
+			      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+			      <a href="#" class="btn btn-primary">See Profile</a>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="col-sm-4" id="card-two">
+			   <div class="card" style="width:350px">
+			    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+			    <div class="card-body">
+			      <h4 class="card-title">John Doe</h4>
+			      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+			      <a href="#" class="btn btn-primary">See Profile</a>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="col-sm-4" id="card-three">
+			   <div class="card" style="width:350px">
+			    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+			    <div class="card-body">
+			      <h4 class="card-title">John Doe</h4>
+			      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+			      <a href="#" class="btn btn-primary">See Profile</a>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="row" style="width:100%">
+	  			<div >
+		  			<div>
+		  				<h2  class="textanimated">Keep Smiling and loving</h2>
+		  			</div>
+	  			</div>
+	  		</div>
+
+
+	  		<div class="row">
+		  		<div class="col-sm-4" id="cardtwo-one">
+				  <div class="card" style="width:350px">
+				    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+				    <div class="card-body">
+				      <h4 class="card-title">John Doe</h4>
+				      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+				      <a href="#" class="btn btn-primary">See Profile</a>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="col-sm-4" id="cardtwo-two">
+				   <div class="card" style="width:350px">
+				    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+				    <div class="card-body">
+				      <h4 class="card-title">John Doe</h4>
+				      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+				      <a href="#" class="btn btn-primary">See Profile</a>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="col-sm-4" id="cardtwo-three">
+				   <div class="card" style="width:350px">
+				    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+				    <div class="card-body">
+				      <h4 class="card-title">John Doe</h4>
+				      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+				      <a href="#" class="btn btn-primary">See Profile</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+	 	</div>
+
+	 	<script type="text/javascript">
+	 		
+	 		$(document).ready(function(){
+	 			$(window).scroll(function(){
+	 				var positionTop = $(document).scrollTop();
+
+	 				console.log(positionTop);
+
+	 				if((positionTop>2) && (positionTop<213)){
+
+	 						$('#card-one').addClass('animated bounceInLeft');
+	 						$('#card-two').addClass('animated zoomInDown');
+	 						$('#card-three').addClass('animated flipInX');
+	 				}
+
+	 				if((positionTop>240) && (positionTop<515)){
+
+	 						$('.textanimated').addClass('animated bounceInLeft');
+	 					}
+	 						
+
+	 				if((positionTop>515) && (positionTop<720)){
+
+	 						$('#cardtwo-one').addClass('animated bounceInLeft');
+	 						$('#cardtwo-two').addClass('animated zoomInDown');
+	 						$('#cardtwo-three').addClass('animated flipInX');
+	 				}
+
+
+	 			});
+	 		});
+
+	 	</script>
+</body>
+</html>

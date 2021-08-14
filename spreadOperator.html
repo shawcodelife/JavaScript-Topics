@@ -1,0 +1,26 @@
+
+<script type="text/javascript">
+	const dryFruits = ['kaju', 'kismis', 'badam', 'chana'];
+	const juicyFruits = ['ornage', 'pomagranate', 'mango'];
+
+	//1. Copying an array
+	const fruits = [...dryFruits, ...juicyFruits];
+	const info = fruits.map((value)=>{
+		console.log(value)
+	});
+	
+
+	//2. Inserting the elements of one array into another
+	const fullName = ['Vicky', 'Kumar']
+	const biodata = [1, ...fullName, 26];
+	biodata.map((value)=>{
+		document.write(value+" ");
+	});
+
+	//3. Array to arguments
+	const multiply = (number1, number2, number3)=>{
+		console.log(number1 * number2 * number3)
+	}
+	const numbers = [1,2,3];
+	multiply(...numbers);
+</script>

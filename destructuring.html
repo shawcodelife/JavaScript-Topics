@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	let biodata = 
+				{
+					name : 'Sonu',
+					age	 : 26,
+					place : 'Rohtas'
+				};
+
+		document.write(biodata.name);
+		document.write('<br>');
+
+	//destructuring of object
+	let {name, age, place} = biodata;
+	document.write(name + ' '+ age + ' '+ place);
+	document.write('<br>');
+
+	let colors = ['1', '2', '3'];
+
+	let [red, orange, blue] = colors;
+
+	document.write(orange);//2
+
+
+
+</script>

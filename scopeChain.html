@@ -1,0 +1,48 @@
+<script type="text/javascript">
+	var globalvariablex = 1;
+	var globalvariabley = 'Keep smiling';
+	console.log(globalvariabley);
+
+	f1();
+	function f1(){
+		var localvariableA = 10;
+					console.log(localvariableA);
+					console.log(localvariableB);//Uncaught ReferenceError: localvariableB is not defined
+					console.log(localvariableC);
+					console.log(localvariableD);
+
+		f2();
+		function f2(){
+			var localvariableB = 15;
+					console.log(globalvariablex);
+					console.log(localvariableA);
+					console.log(localvariableB);
+					console.log(localvariableC);//localvariableC is not defined
+					console.log(localvariableD);//execution will not reache here
+
+			f3();
+			function f3(){
+				var localvariableC = 20;
+					console.log(globalvariablex);
+					console.log(localvariableA);
+					console.log(localvariableB);
+					console.log(localvariableC);
+					console.log(localvariableD);//Uncaught ReferenceError: localvariableD is not defined
+
+				f4();
+				function f4(){
+					localvariableD = 25;
+
+					//climb up chain will happens
+					console.log(globalvariablex);
+					console.log(localvariableA);
+					console.log(localvariableB);
+					console.log(localvariableC);
+					console.log(localvariableD);
+
+				}
+			}
+		}
+
+	}
+</script>

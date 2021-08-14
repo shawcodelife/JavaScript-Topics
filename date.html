@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		/*var d = new Date();
+		var month = d.getMonth()+1;
+		var year = d.getFullYear();
+		var date = d.getDate();
+		document.write(date + "-" +month + "-" +year);*/
+
+		var d = new Date();
+		/* d.setMonth(6);
+		 d.setFullYear(2021);
+
+		d.setDate(19);
+		*/
+		document.write("<br>");
+		//document.write(d.getFullYear());
+
+		switch(d.getDay()){
+			case 0 : var day = "Sunday";
+						break;
+			case 1 : var day = "Monday";
+						break;
+			case 2 : var day = "Tuesday";
+						break;
+			case 3 : var day = "Wednesday";
+						break;
+			case 4 : var day = "Thrusdy";
+						break;
+			case 5 : var day = "Friday";
+						break;
+			case 6 : var day = "Satuarday";
+						
+		}
+		document.write(day+"-"+d.getDate() + "-" +d.getMonth() + "-" +d.getFullYear());
+
+	</script>
+</body>
+</html>

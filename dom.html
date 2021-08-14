@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<p id="thapa"> Thapa </p>
+	<p class="welcome"> Technical </p>
+   
+   <!-- How to access element by IS -->
+	<script type="text/javascript">
+		var a = document.getElementById("thapa").innerHTML;
+		document.write(a);
+	</script>
+
+	<!-- How to access element by class -->
+	<script type="text/javascript">
+		var b = document.getElementsByClassName("welcome")[0].innerHTML;
+		document.write(b);
+	</script>
+
+	<!-- How to access element by tag name -->
+	<script type="text/javascript">
+		document.write("<br>");
+		var tag = document.getElementsByTagName("p")[0].innerHTML;
+		document.write(tag); 
+	</script>
+
+	<!-- How to access first element of any .. -->
+
+	<script type="text/javascript">
+		var p = document.querySelector('p').innerHTML;
+		document.write(p);
+	</script>
+
+</body>
+</html>

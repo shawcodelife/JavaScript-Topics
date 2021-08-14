@@ -1,0 +1,38 @@
+<script type="text/javascript">
+	const myFavFruits = ['Mango', 'Pomagranate', 'Apple', 'Banana'];
+	//first way to access element
+	/*document.write(`${myFavFruits[0]}, ${myFavFruits[1]}, ${myFavFruits[2]}, ${myFavFruits[3]} `);
+*/
+	//using for loop
+	/*for(let i=0; i<myFavFruits.length; i++){
+		document.write(`${i} -- ${myFavFruits[i]} `);
+	}*/
+
+	//using forEach to get only value
+	/*myFavFruits.forEach(function(arrValue){
+		document.write(`${arrValue} <br> `);
+	})*/
+
+	//using forEach to get both value and index
+	/*myFavFruits.forEach(function(currValue, index){
+		document.write(`${index} -- ${currValue} <br> `);
+	})*/
+
+	//adding  a new item to myFavFruits array
+	/*myFavFruits.push('Orange');
+
+	myFavFruits.forEach(function(arrValue){
+		document.write(`${arrValue} `)
+	})*/
+
+
+	//Create one array for each element in the array: add the value 100 to each items and update the element value
+
+	let numbers = [5, 10, 15, 20];
+	numbers.forEach(function(value, index, arr){
+		document.write(`${arr[index] + 100} `);
+		
+	})
+
+
+</script>

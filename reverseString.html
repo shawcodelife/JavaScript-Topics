@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Reverse String</title>
+</head>
+<body>
+	<h2 style="text-align: center;">Reverse The String in Real Time with Decrementing For Loop</h2>
+	<input type="text" name="" id="urstring" onkeyup="reverseFunc()">
+	<input type="text" name="" id="reversestring">
+
+	<script type="text/javascript">
+		function reverseFunc(){
+			var getInputString = document.getElementById('urstring').value;
+
+			var newString = '';
+
+			for(var i = getInputString.length-1; i>=0; i--){
+				newString += getInputString[i];
+			}
+			document.getElementById('reversestring').value = newString;
+
+		}
+		
+
+	</script>
+</body>
+</html>

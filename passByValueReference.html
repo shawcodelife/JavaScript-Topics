@@ -1,0 +1,40 @@
+<script type="text/javascript">
+	
+	let a = 5;
+	let b = a;
+	document.write('a = '+a+'<br>');
+	document.write('b = '+b);
+
+	document.write('<br>');
+
+	let person={
+		firstName: 'Sonu'
+	}
+
+	let person2 = person;
+
+	document.write(person===person2);//true bcz value is same
+
+	document.write('<br>');
+
+	// But when i change person2 value then  person object value also be changed
+
+	person2.lastName = 'Shaw';
+
+	document.write('person.lastName = '+person.lastName);
+	document.write('<br>');
+	document.write('person2.lastName = '+person2.lastName);
+
+
+	//I would want copy object and if i change will not affect other object
+
+	const arr1 = [1,2,3,4];
+
+	const arr2 =[].concat(arr1);
+
+	arr2.push(6);
+	document.write('<br>');
+	document.write('arr1-> '+arr1 +'<br>');
+	document.write('arr2-> '+arr2);
+
+</script>

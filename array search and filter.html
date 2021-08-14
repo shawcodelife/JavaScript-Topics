@@ -1,0 +1,125 @@
+<script type="text/javascript">
+	
+	 /*
+	 2. Array Subsection 2 Searching and Filter in an Array
+	
+	->Array.prototype.indexOf()
+	
+	->start searchin from start to last(left to right)
+	
+	->Returns the first (least) index of an element within the array equal to an element, or -1 if none is not found.
+	
+	->It search the element from the 0th index number that means forward search
+*/
+	/*var myFriendNames = ["vinod", "bahadur", "thapa", "thapatechnical", "thapa"];
+	console.log(myFriendNames.indexOf("thapa"));//2
+	console.log(myFriendNames.indexOf("thapa", 3));//4*/
+
+
+
+
+
+
+	/*
+		->Array.prototype.lastIndexOf()
+
+		->start searchin from last to start (right to left)
+
+		->Retturn the last(gratest) index\ of an element within the array equal to an element, or -1 if none is found.
+
+		->It searches the elemetn last to first means backward search
+
+	*/
+
+	/*
+	var myFriendNames = ["vinod", "bahadur", "thapa", "thapatechnical", "thapa"];
+	console.log(myFriendNames.lastIndexOf("thapa"));//4
+	console.log(myFriendNames.lastIndexOf("thapa", 3));//2
+	*/
+
+
+
+
+	/*
+		->Array.prototype.includes()
+
+		->Determines whether the araay contains a value
+
+		->returning true or false as appropriate
+
+		->It is a forward search method
+		
+		-> all the methods are case sensitive
+	*/
+
+	/*var myFriendNames = ["vinod", "bahadur", "thapa", "thapatechnical", "thapa"];
+	console.log(myFriendNames.includes("thapa"));//true
+	console.log(myFriendNames.includes("thapa", 3));//true
+		console.log(myFriendNames.includes("thapa", 5));//false*/
+
+
+	/*
+
+		->Array.prototype.find()
+
+		->arrayName.find(callback(element, index, array, thisArg))
+
+		->Return the found element in the array, if some element in the array satisfies the testing function, or undefined if not found.
+
+		->Only problem is that it return only one element
+
+	*/
+
+	/*const prices = [200, 300, 350, 400, 450, 500, 600 ];
+	 const searchedPrice = prices.find((element)=>{
+		return element<400;
+	})
+
+	 console.log(searchedPrice);//200
+
+	 console.log(prices.find((element)=>element>350));//400*/
+
+	
+
+
+
+	 /*
+		->Array.prototype.findIndex()
+
+		->Return the found index in the array, if an element in the array satisfies the testing function, or -1 if not found.
+	
+	 */
+
+	/* const prices = [200, 300, 350, 400, 450, 500, 600 ];
+	 const searchedPrice = prices.findIndex((element)=>{
+		return element<400;
+	})
+
+	 console.log(searchedPrice);//0
+
+	 console.log(prices.findIndex((element)=>element>350));//3
+*/
+
+
+
+	/*
+		->Array.prototype.filter()
+
+		->Return a new array containing all element of the calling array for which the provided filtering function returns true
+	*/
+
+	const prices = [200, 300, 350, 400, 450, 500, 600 ];
+	const newPriceTag = prices.filter((elem)=>{
+		return elem<400;
+	})
+	console.log(newPriceTag);//[ 200, 300, 350 ]
+
+	const priceTag = prices.filter((elem)=>{
+		return elem>1400;
+	})
+	console.log(priceTag);//[]
+
+	
+
+
+</script>

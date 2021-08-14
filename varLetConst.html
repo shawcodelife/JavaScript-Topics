@@ -1,0 +1,54 @@
+<script type="text/javascript">
+
+	/*//var has function scope
+	var check = () =>{
+		var x = 10;
+
+		if(true){
+
+			var x =20;
+
+			document.write(x); //20
+		}
+		document.write(x); //20
+	}
+	check();*/
+
+
+
+//let keyword has block scoped
+	let check = () => {
+
+		let x = 10;
+
+		if(true){
+			let x = 20;
+			document.write(x); //20
+		}
+		document.write('<br>');
+		document.write(x); //10
+		document.write('<br>');
+	}
+	check();
+
+
+
+
+/*
+	//const keyword is used to not change the value
+	const check = () => {
+
+		const x = 10;
+
+		if(true){
+			 x = 20; //Uncaught TypeError: invalid assignment to const 'x'
+			document.write(x); //20
+		}
+		document.write('<br>');
+		document.write(x); //10
+		document.write('<br>');
+	}
+	check();*/
+
+
+</script>

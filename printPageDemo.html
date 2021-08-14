@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="divone">
+		One div content is here..
+		<button onclick="myfunc('divone')">One Div</button>
+	</div>
+	<div id="divtwo">
+		Two div content is here..
+		<button onclick="myfunc('divtwo')">Sceond Div</button>
+	</div>
+	<div id="divthree">
+		three div content is here..
+		<button onclick="myfunc('divthree')">Three Div</button>
+	</div>
+
+	<button onclick="wholepage()">Print Whole Page</button>
+
+	<script type="text/javascript">
+		//to print whole page
+		function wholepage(){
+			window.print(); //document.body.innerHTML
+		}
+
+		//to print specific section
+		function myfunc(paravalue){
+			var backup = document.body.innerHTML;
+			var divContent = document.getElementById(paravalue).innerHTML;
+			document.body.innerHTML = divContent;
+			window.print();
+
+			document.body.innerHTML = backup;
+		}
+	</script>
+</body>
+</html>
